@@ -82,7 +82,7 @@ const CreateNewShorten = ({ setOpen, refetch }) => {
         </div>
 
         <button
-          className="bg-customRed font-semibold text-white w-32  bg-custom-gradient  py-2  transition-colors  rounded-md my-3"
+          className="border-btnColor border  text-[#fd3db5] w-32  bg-custom-gradient  py-2  transition-colors  rounded-md my-3 cursor-pointer hover:bg-[#fd3db5] hover:text-white "
           type="text"
         >
           {loading ? "Loading..." : "Create"}

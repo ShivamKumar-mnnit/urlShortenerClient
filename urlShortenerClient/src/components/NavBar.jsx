@@ -18,10 +18,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="h-16 bg-custom-gradient  z-50 flex items-center sticky top-0 ">
+    <div className="h-16 bg-custom-gradient  z-50 flex items-center  top-0 ">
       <div className="lg:px-14 sm:px-8 px-4 w-full flex justify-between">
         <Link to="/">
-          <h1 className="font-bold text-3xl text-white italic sm:mt-0 mt-2">
+          <h1 className="font-bold text-3xl text-[#fd3db5] italic sm:mt-0 mt-2">
             Linklytics
           </h1>
         </Link>
@@ -33,7 +33,7 @@ const Navbar = () => {
           <li className="hover:text-btnColor font-[500]  transition-all duration-150">
             <Link
               className={`${
-                path === "/" ? "text-white font-semibold" : "text-gray-200"
+                path === "/" ? "text-[#fd3db5] font-semibold" : "text-gray-800"
               }`}
               to="/"
             >
@@ -43,7 +43,7 @@ const Navbar = () => {
           <li className="hover:text-btnColor font-[500]  transition-all duration-150">
             <Link
               className={`${
-                path === "/about" ? "text-white font-semibold" : "text-gray-200"
+                path === "/about" ? "text-[#fd3db5] font-semibold" : "text-gray-800"
               }`}
               to="/about"
             >
@@ -54,7 +54,7 @@ const Navbar = () => {
             <li className="hover:text-btnColor font-[500]  transition-all duration-150">
             <Link
               className={`${
-                path === "/dashboard" ? "text-white font-semibold" : "text-gray-200"
+                path === "/dashboard" ? "text-[#fd3db5] font-semibold" : "text-gray-800"
               }`}
               to="/dashboard"
             >
@@ -83,9 +83,9 @@ const Navbar = () => {
           className="sm:hidden flex items-center sm:mt-0 mt-2"
         >
           {navbarOpen ? (
-            <RxCross2 className="text-white text-3xl" />
+            <RxCross2 className="text-[#fd3db5] text-3xl" />
           ) : (
-            <IoIosMenu className="text-white text-3xl" />
+            <IoIosMenu className="text-[#fd3db5] text-3xl" />
           )}
         </button>
       </div>
